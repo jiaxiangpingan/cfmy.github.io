@@ -259,14 +259,6 @@ go run hello_world.go
 
 即可成功执行
 
----
-> 越是接近底层，越是接近计算机平日里向我展示不到的地方，我就越发觉得自己的浅薄
-> 和无知。
->
-> 我曾以为自己无所不能，直到遇到了汇编语言。
-> :cry::cry::cry::cry::cry:
----
-
 ## 脚本语言
 ### Pyhton
 
@@ -782,6 +774,119 @@ PlantUML是一个开源项目，支持快速绘制多种图形，最棒的是可
 ```
 
 ## 其他语言
-这些语言看起来不是那么是和“Hello World”程序，正在考虑是否进一步增加相关内容，暂时略去。
 
+### xml
 
+>[!tip|label:说明]
+
+XML（Extensible Markup Language）是一种类似于 HTML，但是没有使用预定义标记的语言。因此，可以根据自己的设计需求定义专属的标记。这是一种强大将数据存储在一个可以存储、搜索和共享的格式中的方法。最重要的是，因为 XML 的基本格式是标准化的，如果你在本地或互联网上跨系统或平台共享或传输 XML，由于标准化的 XML 语法，接收者仍然可以解析数据。
+
+XML的优点包括：
+* 格式统一，符合标准
+* 容易与其他系统进行远程交互，数据共享比较方便
+* 灵活的数据呈现方式
+* 可移植性
+* 简化数据共享
+* 可扩展
+* 支持Unicode
+* 自文档格式
+* 用途广泛
+* DTD和Schema验证
+
+>[!note|label:语法]
+
+略
+
+>[!attention|label:示例]
+
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="css/salutation.css"?>
+<root>
+    <abc>Hello world</abc>
+</root>
+
+```
+
+>[!warning|label:其他]
+
+>[!tip|style:callout|label:执行方法]
+
+略
+
+### JSON
+
+>[!tip|label:说明]
+
+JSON（JavaScript Object Notation, JS对象简谱）是一种轻量级的数据交换格式。它基于 ECMAScript（European Computer Manufacturers Association, 欧洲计算机协会制定的js规范）的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。
+
+JSON的优点:
+* 数据格式比较简单, 易于读写, 格式都是压缩的, 占用带宽小
+* 易于解析这种语言, 客户端JavaScript可以简单的通过eval_r()进行JSON数据的读取
+* 支持多种语言, 包括ActionScript, C, C#, ColdFusion, Java, JavaScript, Perl, PHP, Python, Ruby等语言服务器端语言, 便于服务器端的解析
+* 在PHP世界, 已经有PHP-JSON和JSON-PHP出现了, 便于PHP序列化后的程序直接调用. PHP服务器端的对象、数组等能够直接生JSON格式, 便于客户端的访问提取.
+* 因为JSON格式能够直接为服务器端代码使用, 大大简化了服务器端和客户端的代码开发量, 但是完成的任务不变, 且易于维护
+
+>[!note|label:语法]
+
+略
+
+>[!attention|label:示例]
+
+```
+{
+    "message": "Hello World!"
+}
+```
+
+>[!warning|label:其他]
+
+>[!tip|style:callout|label:运行方式]
+
+显然上述定义不会有任何输出，需要在其他文件中引用。
+
+一种可以参考的运行方式如下：
+
+```
+import json
+with open('hello_world.json', 'r') as file:
+    data = json.load(file)
+print(data['message'])
+```
+
+### css
+
+>[!tip|label:说明]
+
+层叠样式表（Cascading Style Sheets，缩写为 CSS）是一种样式表语言，用来描述 HTML 或 XML（包括如 SVG、MathML 或 XHTML 之类的 XML 分支语言）文档的呈现方式。CSS 描述了在屏幕、纸质、音频等其他媒体上的元素应该如何被渲染的问题。
+
+CSS 是开放 Web 的核心语言之一，并根据 W3C 规范在 Web 浏览器中进行了标准化。以前，CSS 规范的各个部分的开发是同步进行的，这种方式允许对最新推荐的 CSS 版本进行控制。你可能已经听说过 CSS1、CSS2.1 甚至 CSS3。但是以后将不会再有 CSS3 或者 CSS4；相反，现在的一切都是没有版本号的 CSS。
+
+CSS的优点：
+* ​节省时间​：可以编写一次CSS，然后在多个HTML页面中通过外部引入多次​重复使用​
+* ​页面加载速度更快​​：通过使用CSS，就不需要每次都编写HTML标记属性，只需要编写一个标记的CSS规则，并将其应用于该标记的所有实例，因此代码大大减少也就意味着下载时间短。
+* ​易于维护​​：如果要进行全局更改，则只需​更改样式​，所有网页中的所有元素都将会自动更新。
+* ​多设备兼容性​：样式表允许针对多种不同类型的设备进行优化内容。
+* 浏览器在样式表中​从上到下​读取样式定义。这也说明我们在样式表中定义的样式将覆盖样式表中先前定义的任何先前样式，不过我们可以在后面的元素中重新定义则不会被覆盖。
+
+>[!note|label:语法]
+
+略
+
+>[!attention|label:示例]
+
+```
+hw
+{
+    background-color: black;
+    color:white;
+}
+```
+
+>[!warning|label:其他]
+
+>[!tip|style:callout|label:执行方法]
+
+由于css用于控制样式，因此上述并不会直接输出，需要被引用。
+
+事实上使用前文的xml可以引用该部分，显示效果为黑底白字。
