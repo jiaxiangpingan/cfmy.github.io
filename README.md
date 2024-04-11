@@ -5,8 +5,8 @@
 
 该速查手册涵盖了诸多方面，目录如下。
 * [前言（更新完毕）](/DivPart/前言.md)
-* [速查表格（正在补充中）](/DivPart/速查表格.md)
+* [速查表格（补充中……）](/DivPart/速查表格.md)
 * [语言的分类（更新完毕）](/DivPart/语言的分类.md)
-* [Hello World（正在完善中）](/DivPart/Hello_World.md)
+* [Hello World（更新完毕）](/DivPart/Hello_World.md)
 * [数据类型（开头了……）](/DivPart/数据类型.md)
 
