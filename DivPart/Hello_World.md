@@ -260,7 +260,7 @@ go run hello_world.go
 即可成功执行
 
 ## 脚本语言
-### Pyhton
+### Python
 
 >[!tip|label:说明]
 
