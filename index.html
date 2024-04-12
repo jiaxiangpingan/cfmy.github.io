@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>计算机语言速查手册</title>
+    <title>长风暮云Docsify部分</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport"
@@ -21,31 +21,37 @@
     />-->
 
     <!--暗黑模式-->
+    <!--
     <link
      rel="stylesheet"
      href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"
     />
+    -->
 
     <!--数据统计图支持-->
     <!--<link rel="stylesheet" href="//unpkg.com/@markbattistella/docsify-charty@latest/dist/docsify-charty.min.css">-->
 
 
     <!--评论系统继续测试-->
+    <!--
     <link
     rel="stylesheet"
     href="https://unpkg.com/@waline/client@v2/dist/waline.css"
     />
+    -->
 
 </head>
 
 <body>
     <!--markmap支持，测试中-->
+    <!--
     <style>
         .markmap {
           width: 100%;
           height: 500px;
         }
       </style>
+      -->
     <!-- 定义加载时候的动作 -->
     <div id="app">加载中...</div>
 
@@ -56,11 +62,11 @@
             // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
             //repo: 'https://github.com/YSGStudyHards',
             // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
-            loadSidebar: false,
+            loadSidebar: true,
             // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
-            loadNavbar: false,
+            loadNavbar: true,
             // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
-            coverpage: false,
+            coverpage: true,
             // 最大支持渲染的标题层级
             maxLevel: 6,
             // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
@@ -132,6 +138,7 @@
 
             /*设置暗黑模式*/
             // your docsify configuration
+            /*
             themeColor: "#42b983", // this is the default 'vue' color
             dark: {
                 background: "#1c2022",
@@ -143,14 +150,15 @@
                 toggleBtnBg: "var(--theme-color)",
                 textColor: "var(--theme-color)"
               },
-
+              */
               /*阅读进度条*/
+              /*
             progress: {
                 position: "top",
                 color: "var(--theme-color,#42b983)",
                 height: "3px",
             },
-
+            */
             /*数据统计图支持*/
             /*charty: {
                 "theme": String,
@@ -181,6 +189,7 @@
             ]*/
 
             /*评论系统继续测试*/
+            /*
             count: {
                 language: "", // default:english|chinese
               },
@@ -191,7 +200,7 @@
                 pageview: true,
                 // ...
                 // don't support custom `el` and `path`
-              },
+              }*/
 
         }
     </script>
@@ -214,17 +223,23 @@
      <!-- 字数插件，与阅读进度不兼容，选择注释掉 -->
      <!--<script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>-->
      <!--plantUML流程图支持-->
-     <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
      <!--语法高亮-->
-     <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+     <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts"></script>
      <!--支持网页分页布局模块-->
+     <!--
      <script src="//unpkg.com/docsify-slides/dist/docsify-slides.min.js"></script>
+     -->
      <!--横幅,没有什么很大的作用，注释掉-->
      <!--<script src="https://cdn.jsdelivr.net/npm/docsify-top-banner-plugin@latest/dist/index.js"></script>-->
      <!--暗黑模式-->
+     <!--
      <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+     -->
      <!--阅读进度条-->
+     <!--
      <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+     -->
      <!--支持分章节，正在测试中-->
      <!--<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>-->
      <!--数据统计图支持,暂时用不上，决定注释掉-->
@@ -233,15 +248,21 @@
      <!--终端代码块颜色支持-->
      <script src="https://cdn.jsdelivr.net/npm/docsify-terminal-block@1.0.3"></script>
      <!--markmap支持-->
+     <!--
      <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.15.2"></script>
      <script src="https://cdn.jsdelivr.net/npm/docsify-markmap.js@1.0.0/docsify-markmap.min.js"></script>
+     -->
     <!--插入哔哩哔哩支持-->
+    <!--
     <script src="//unpkg.com/docsify-bilibili/bilibili.min.js"></script>
+    -->
 
 
     <!--评论系统继续测试-->
+    <!--
     <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
     <script src="https://unpkg.com/docsify-waline@2/docsify-waline.min.js"></script>
+    -->
 
 </body>
 
